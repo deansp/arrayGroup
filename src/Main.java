@@ -8,11 +8,15 @@ public class Main {
 
         int maxNumber = num2[0];
 
-        for (int i = 1; i < num2.length; i++) {
-            if (num2[i] > maxNumber) {
-                maxNumber = num2[i];
+        int[] resultArray = new int[num.length];
+        for (int i = 0; i < num.length; i++) {
+            resultArray[i] = num[i] + num2[i];
+        }
+        // Print the result array
+        for (int i = 0; i < resultArray.length; i++) {
+            if (i < resultArray.length - 1) {
+                System.out.println(resultArray[i]);
             }
         }
-        System.out.println(maxNumber);
     }
 }
